@@ -1,0 +1,82 @@
+$getst:rgb(245,63,139);
+$bgimg:linear-gradient(#fd6850,#f02ea1);
+$bgimgft:linear-gradient(rgb(115, 115, 229),#f02ea1);
+
+             
+/******************************Content Card************************/
+.card{  
+     width: 100%;
+     min-height:100px;
+    // position: relative;
+     border-radius: 8px;
+     box-shadow: 2px 1px rgba(99, 99, 55,0.2); 
+     background-color:rgba(255, 255, 255, 0.806);
+     display:grid;
+     grid-template-rows: 3fr 0.5fr;
+
+    .grid_card{
+        max-width:100%;
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr; 
+        margin: 0 10px 10px 10px;
+        h3{
+          padding:30px 0px 10px 20px;
+        }
+        .paragraph{
+            position: relative;
+            min-width: 200px;
+            min-height: 100px;
+            padding:0px 20px 0px 20px;
+                p{
+                    opacity: 50%;      
+                    display: -webkit-box;
+                    -webkit-line-clamp: 6;
+                    -webkit-box-orient:vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin-bottom: 20px;
+                    font-size: 1.3em;
+                }
+            }
+        }
+        .get_s{
+            min-width: 200px;
+            display: flex;
+            justify-content: start;
+            margin: 0 10px 0 10px;
+            .getstarted{ 
+                color:$getst ;
+                font-weight: bold;  
+                padding:0px 0px 25px 20px;
+            }
+            .getstarted:hover{
+                cursor: pointer;
+                color: aqua;
+            }
+        }
+        
+
+}
+             
+/******************************Content Card1************************/
+.card1{
+    width: 100%;
+    height: 210px;
+    display: grid;
+    place-items: center;    
+    background-image: $bgimg;
+    border-radius: 10px;
+    .card1_span{
+        width: 200px;
+        height: 75%;
+        h3{
+            font-size: 1.7em;
+            padding:5px 50px 0px 0px;
+            color: #fff;
+        }
+    }
+    
+}
+.card1:is(:hover){
+    cursor: pointer;
+}

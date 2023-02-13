@@ -1,0 +1,25 @@
+.card{
+    
+    .grid_card{
+       position: relative;
+               
+/**************************************************Icon****************************************************/     
+        .icon{         
+            width: 25px;
+            height: 25px;
+            background-image: $bgimg;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top:-13px;
+            left:20px;
+            img{
+              color:white;
+              width: 35px;
+              height: 35px;
+            }
+      }
+    }
+}
